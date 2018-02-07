@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background: #dcae00;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  text-decoration: none;
+  background: darkgoldenrod;
+  border: 1px solid black;
+}
+li {
+  margin: 1%;
+  font-family: Verdana;
+}
+textarea {
+  resize: none;
+  height: 50px;
+  width: 300px;
+}
+a {
+  text-decoration: none;
+}
