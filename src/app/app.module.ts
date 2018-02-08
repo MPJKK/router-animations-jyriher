@@ -13,6 +13,7 @@ import {UploadComponent} from './upload/upload.component';
 import {MediaService} from './services/media.service';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import { ThumbnailPipe } from './pipes/thumbnail.pipe';
 
 
 
@@ -25,6 +26,7 @@ import {FormsModule} from '@angular/forms';
     LoginComponent,
     LogoutComponent,
     UploadComponent,
+    ThumbnailPipe,
   ],
   imports: [
     BrowserModule,

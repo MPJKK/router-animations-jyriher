@@ -1,4 +1,4 @@
-<div class="gallery">
+<!-- <div class="gallery">
   <div *ngFor="let media of mediaArray">
     <img [src]="mediaService.mediaUrl + media.thumbnail" [alt]="media.title">
     <div>
@@ -6,4 +6,10 @@
       <p>{{ media.description }}</p>
     </div>
   </div>
+</div>
+-->
+
+
+<div *ngFor="let media of mediaArray">
+  <img [alt]="media.title" [src]="'http://media.mw.metropolia.fi/wbma/uploads/' + (media.filename | thumbnail: 'small')">
 </div>
