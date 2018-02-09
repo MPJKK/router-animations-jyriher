@@ -1,5 +1,5 @@
 <nav>
-  <ul>
+  <ul [@fadeAnimation]="getRouterOutletState(o)">
     <li *ngIf="!logged">
       <a [routerLink] = "'/register'">Register</a>
     </li>
@@ -9,10 +9,10 @@
     <li *ngIf="logged">
       <a [routerLink] = "'/logout'">Logout</a>
     </li>
-    <li>
+    <li *ngIf="logged">
       <a [routerLink] = "'/front'">Front page</a>
     </li>
-    <li *ngIf="logged">
+    <li *ngIf="logged || !logged">
       <a [routerLink] = "'/upload'">Upload</a>
     </li>
   </ul>

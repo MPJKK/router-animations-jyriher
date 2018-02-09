@@ -9,7 +9,13 @@
 </div>
 -->
 
-
-<div *ngFor="let media of mediaArray">
-  <img [alt]="media.title" [src]="'http://media.mw.metropolia.fi/wbma/uploads/' + (media.filename | thumbnail: 'small')">
+<div class="gallery">
+  <div *ngFor="let media of mediaArray">
+    <img [alt]="media.title"
+         [src]="'http://media.mw.metropolia.fi/wbma/uploads/' + (media.filename | thumbnail: 'small')">
+    <div>
+      <h5>{{ media.title }}</h5>
+      <p>{{ media.description }}</p>
+    </div>
+  </div>
 </div>

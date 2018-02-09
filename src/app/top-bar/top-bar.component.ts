@@ -13,6 +13,10 @@ export class TopBarComponent implements OnInit {
 
   logged: boolean;
 
+  public getRouterOutletState(outlet) {
+    return outlet.isActivated ? outlet.activatedRoute : '';
+  }
+
   ngOnInit() {
 
     if (localStorage.getItem('token') !== null) {
