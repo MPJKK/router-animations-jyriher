@@ -12,7 +12,7 @@
     <li *ngIf="logged">
       <a [routerLink] = "'/front'">Front page</a>
     </li>
-    <li *ngIf="logged || !logged">
+    <li *ngIf="logged">
       <a [routerLink] = "'/upload'">Upload</a>
     </li>
   </ul>
